@@ -1,0 +1,26 @@
+
+  <h1>
+    Name: Calvin Regan
+    Student Number: s00250043
+  </h1>
+
+  <div class="container">
+    <h1>Movie Favourites Week 5</h1>
+    <app-add-movie></app-add-movie>
+  </div>
+
+  <div class="container p-0">
+   <div class="row">
+    <div class="col-sm-6">
+      <app-list-movies (onSelectedMovie)="setSelectedMovie($event)"></app-list-movies>
+    </div>
+    <div class="col-sm-6">
+      <app-movie-detail [movieDetails]="mySelectedMovie"></app-movie-detail>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+
